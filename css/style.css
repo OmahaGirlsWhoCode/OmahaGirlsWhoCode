@@ -1,0 +1,263 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #01426a;
+  font-family: "Raleway";
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: #ece81a;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 2px dotted #f4364c;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+	/*background: #004d66;*/
+  background: #01426a;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.navbar-brand>img {
+  max-width: 100%;
+  height:100%;
+  border-bottom: 2px dotted #f4364c;
+}
+.navbar-brand::after {
+  content: 'OMAHA';
+  color: white;
+  display: block;
+  text-align: center;
+};
+
+/* TODO: finicky, can't get these two margin settings to combine */;
+.navbar-nav {
+  margin: 10px 0 !important;
+}
+ul.nav {
+  margin: 10px 0 !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+  }
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:hover{
+  background: #01426a;
+  color: #ece81a;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #ece81a;
+}
+
+.navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background: #01426a;
+  color: #ece81a;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-inverse {
+  border-color: transparent;
+}
+
+a, a:hover, a:focus {
+  color: #6eceb2;
+  font-weight: bold;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-inner>.item>img{
+  margin-top: 20px;
+  height: 600px;
+}
+
+.carousel-side {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 400px;
+  color: #6eceb2;
+}
+.carousel-side.left{
+  text-align: right;
+}
+.carousel-side.right{
+  text-align: left;
+}
+
+#fb {
+	padding-top: 30px;
+}
+
+
+/* Center align the text within the four columns for the team*/
+
+.team {
+	margin-top: 100px;
+}
+.team .col-md-3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.team h2 {
+  font-weight: normal;
+}
+.team .col-md-3 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.wrap-left {
+	float: left;
+	margin: 10px;
+	height:220px;
+	width:400px;
+	border-radius:5px;
+}
+
+#mobile-view {
+	display:none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  padding-top: 7.5px;
+  height: 35px;
+  background: #01426a;
+}
+.footer * > a {
+  font-size: 10px;
+}
+.footer * >.fa {
+  color: white;
+  font-size: 14px;
+}
+.footer * >.col-xs-4 {
+  padding: 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .footer * > a > .social-link-text {
+    display: none;
+  }
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  img.wrap-left {
+	  height: 100px;
+	  width: 200px;
+  }
+  #desktop-view {
+	  display:none;
+  }
+
+  #mobile-view {
+	  display: inline;
+  }
+}
+
