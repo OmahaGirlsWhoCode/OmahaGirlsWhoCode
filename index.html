@@ -68,25 +68,19 @@
 		  </div>
 		</div>
 
-
-		<!-- Carousel
-		================================================== -->
-		<div class="container home">
-			<div class="row">
-				<div class="col-xs-2 carousel-side left">{</div>
-				<div id="carousel" class="col-xs-8 carousel slide carousel-fade" data-ride="carousel">
-
-			    <!-- Carousel items -->
-			    <div class="carousel-inner">
-			        <div class="active item"><img src="img/girls/gwc-1.jpg"/></div>
-			        <div class="item"><img src="img/girls/gwc-2.jpg"/></div>
-			        <div class="item"><img src="img/girls/gwc-3.jpg"/></div>
-					</div>
-
-				</div>
-				<div class="col-xs-2 carousel-side right">}</div>
-			</div>
-		</div>
+		<section id="photos"></section>
+		<script type="text/JavaScript">
+			$(document).ready(function() {
+				function getRandomSize(min, max) {
+				  return Math.round(Math.random() * (max - min) + min);
+				}
+				  for (var i = 0; i < 57; i++) {
+				    var width = getRandomSize(200, 400);
+				    var height =  getRandomSize(200, 400);
+				    $('#photos').append('<img src="img/girls/facebook-album/' + (i + 1) + '.jpg" width=' + width + ' height=' + height + '>');
+				  }
+				});
+		</script>
 
 		<!-- FOOTER -->
 	  <footer class="footer">
