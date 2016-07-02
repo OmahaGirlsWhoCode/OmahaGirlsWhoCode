@@ -38,7 +38,7 @@
   margin-right: -0.25em; /* Adjusts for spacing */
 }
 
-.glass:hover {
+.glass:hover, .glass:focus, .glass:active {
   background-color: rgba(110,206,178,0.85);
   color: black;
   -webkit-transition: background-color 1.5s ease-out;
