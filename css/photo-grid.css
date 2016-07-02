@@ -39,6 +39,7 @@
 }
 
 .glass:hover, .glass:focus, .glass:active {
+  cursor: pointer;
   background-color: rgba(110,206,178,0.85);
   color: black;
   -webkit-transition: background-color 1.5s ease-out;
