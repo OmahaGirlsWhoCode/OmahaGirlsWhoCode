@@ -19,6 +19,9 @@ hr {
   border-top: 2px dotted #f4364c;
 }
 
+.bio {
+  font-family: "Open Sans Condensed";
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
