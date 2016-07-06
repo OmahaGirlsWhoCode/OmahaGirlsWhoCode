@@ -4,23 +4,23 @@
 
 body {
   color: #01426a;
-  font-family: "Raleway";
+  font-family: "Open Sans";
+  font-weight: 300;
   margin-top: 70px;
   margin-bottom: 60px;
 }
 
 h1 {
   color: #ece81a;
+  font-family: "Open Sans";
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
   border-top: 2px dotted #f4364c;
-}
-
-.bio {
-  font-family: "Open Sans Condensed";
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -116,7 +116,9 @@ ul.nav {
 
 a, a:hover, a:focus {
   color: #6eceb2;
-  font-weight: bold;
+}
+a.inline-link {
+  font-weight: 800;
 }
 
 #fb {
