@@ -15,6 +15,7 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="https://use.fontawesome.com/4689f9ac4c.js"></script>
+		<script src="js/read-more.js"></script>
 
 	</head>
 
@@ -58,42 +59,92 @@
       </div>
     </div>
 
-		<div class="container team">
+		<div class="container sponsor">
 
-		  <!-- Three columns of text below the carousel -->
+		  <!-- Sponsor info and popup sponsor interest form -->
 		  <div class="row">
-				<p>Thank you to our wonderful sponsors for supporting Omaha Girls Who Code</p>
+			<div class="col-md-1"></div>
+		  	<div class="col-md-10">
+				<p>Thank you to our wonderful sponsors for supporting Omaha Girls Who Code. 
+				Interested in donating resources to a club? Click the button below to submit a sponsor interest form.</p>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#sponsorModal">Sponsorship Interest Form</button>
+
+					<!-- Modal -->
+					<div id="sponsorModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Sponsor Interest Form</h4>
+								</div>
+								<div class="modal-body">
+									<div id="wufoo-mobbd7d0s4mjkm">
+										Fill out my <a href="https://interfaceschool.wufoo.com/forms/mobbd7d0s4mjkm">online form</a>.
+									</div>
+										<script type="text/javascript">
+											var mobbd7d0s4mjkm;(function(d, t) {
+											var s = d.createElement(t), options = {
+											'userName':'interfaceschool',
+											'formHash':'mobbd7d0s4mjkm',
+											'autoResize':true,
+											'height':'832',
+											'async':true,
+											'host':'wufoo.com',
+											'header':'show',
+											'ssl':true};
+											s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+											s.onload = s.onreadystatechange = function() {
+											var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+											try { mobbd7d0s4mjkm = new WufooForm();mobbd7d0s4mjkm.initialize(options);mobbd7d0s4mjkm.display(); } catch (e) {}};
+											var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+											})(document, 'script');
+										</script>
+									</div>
+              					</div>
+        					</div>
+      					</div>
+					</div>
+				<div class="col-md-1"></div>
+				</div>
+				<!-- Sponsor logos and info, 4 column grid -->
+				<div class="row">
 				<div class="col-md-3">
 
-					<img class="img-circle" src="img/sponsors/dynamo.png" alt="Dynamo" width="140" height="140">
+					<img class="img-circle" src="img/sponsors/dynamo.png" alt="Dynamo">
 				  <h2>Dynamo</h2>
 				  <p>Dynamo is an Omaha based software consulting firm. Dynamo provides weekly snack delivery and final event sponsorship for Omaha Girls Who Code</p>
-				  <p><a class="btn btn-default" href="http://godynamo.com" role="button" target="_blank">Visit Website &raquo;</a></p>
+				  <p><a class="btn btn-default" href="http://godynamo.com" target="_blank" role="button">Visit Website &raquo;</a></p>
 				</div>
 
 				<div class="col-md-3">
-				  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+				  <img class="img-circle" src="img/sponsors/library.jpeg" alt="Omaha Public Library">
 				  <h2>Heading</h2>
-				  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-				  <p><a class="btn btn-default" href="#" role="button">Visit Website` &raquo;</a></p>
+				  <div class="comment more">
+				  	<p>Omaha Public Library Milton R. Abrahams Branch is the sponsoring location of the first Omaha Girls Who Code Club. The library also generously provides laptops for girls to use for the duration of the program</p>
+				  </div>
+				  <p><a class="btn btn-default" href="http://omahalibrary.org" target="_blank" role="button">Visit Website` &raquo;</a></p>
 				</div>
 
 				<div class="col-md-3">
-				  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+				  <img src="img/sponsors/interface.png" alt="Interface Web School">
 				  <h2>Heading</h2>
-				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				  <p><a class="btn btn-default" href="#" role="button">Visit Website &raquo;</a></p>
+				  <div class="comment more">
+				  	<p>Interface Web School is a web developer training school based in Omaha Nebraska. Members of the Interface Web School leadership team donated space and forms access for participant application management.</p>
+				  </div>
+				  <p><a class="btn btn-default" href="http://interfaceschool.com" target="_blank" role="button">Visit Website &raquo;</a></p>
 				</div>
 
 				<div class="col-md-3">
-				  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+				  <img class="img-circle" src="img/sponsors/flywheel.png" alt="Flywheel">
 				  <h2>Heading</h2>
-				  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				  <p><a class="btn btn-default" href="#" role="button">Visit Website &raquo;</a></p>
+				  <p>Flywheel is a WordPress hosting company based in Omaha Nebraska. The Flywheel team provided Scout Books for girls.</p>
+				  <p><a class="btn btn-default" href="http://getflywheel.com" target="_blank" role="button">Visit Website &raquo;</a></p>
 				</div>
 		  </div><!-- /.row -->
+		  
 		</div><!-- /.container -->
-
 		<!-- FOOTER -->
 	  <footer class="footer">
 	    <div class="container">
