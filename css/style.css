@@ -168,9 +168,13 @@ a, a:hover, a:focus {
 	color: #fff;
 }
 
-
 .sponsor .modal-body{
 	max-height: 800px;
+}
+
+.sponsor img {
+	height: 120px;
+	width: 120px;
 }
 
 .sponsor .col-md-3 {
