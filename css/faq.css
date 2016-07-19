@@ -1,10 +1,39 @@
+/*Center Bootstrap tab section headings*/
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
     *display:inline; /* ie7 fix */
      zoom:1; /* hasLayout ie7 trigger */
 }
-
 .nav-tabs, .nav-pills {
     text-align:center;
+    border-bottom: none;
+}
+
+/*Girls vs. Volunteers tab section*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #6eceb2;
+  font-style: italic;
+  border-radius: 0px 0px 0 0; /* GWC has more hard edges than rounded edges */
+}
+.nav-tabs>li>a {
+  border-radius: 0px 0px 0 0;
+}
+.faq-tab {
+  color: #6eceb2;
+}
+
+/*Faq Topic Groupings and Faq accordion tabs*/
+.faq-group {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.faq-heading a {
+  font-style: normal;
+  text-decoration: none;
+  color: #6eceb2;
+}
+.faq-heading a:hover {
+  text-decoration: none;
+  font-style: italic;
 }
