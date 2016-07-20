@@ -28,13 +28,22 @@
 .faq-group {
   text-transform: uppercase;
   font-weight: bold;
+  color: #6eceb2;
 }
 .faq-heading a {
   font-style: normal;
+  font-weight: bold;
   text-decoration: none;
-  color: #6eceb2;
+  color: #01426a;
+}
+.faq-heading {
+  margin: 20px 0 5px 0;
 }
 .faq-heading a:hover {
   text-decoration: none;
   font-style: italic;
+}
+.faq-panel {
+  margin-left: 15px;
+  font-size: 16px;
 }
