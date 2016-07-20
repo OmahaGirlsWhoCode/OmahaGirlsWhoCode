@@ -18,6 +18,7 @@
 
 		<!--custom stylesheet-->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/clubs.css" />
 	</head>
 
 
@@ -70,17 +71,17 @@
         var centerLatLng = {lat: 41.2589604, lng: -96.0268497}
         var clubs = [
           {
-          club: 'Omaha Public Library',
+          club: 'Omaha Public Library | Abrahams Branch 5111 North 90th Street, Omaha, NE 68134',
           lat:   41.3044577,
           lng:  -96.0539399, 
         },
         {
-          club: 'AIM',
+          club: 'AIM 1905 Harney St, Omaha, NE 68102',
           lat:   41.2647173,
           lng:  -95.9457751, 
         },
         {
-          club: 'Do Space',
+          club: 'Do Space 72nd & Dodge, Omaha, NE',
           lat:   41.2589604,
           lng:  -96.0268497, 
         }
@@ -103,13 +104,15 @@
         }
       }
       </script>
+      <br>
       <div class="row">
         <div class="table-responsive">
           <table class="table ">
             <thead>
-              <th></th>
               <th>Club</th>
+              <th></th>
               <th>Location</th>
+              <th>Ages</th>
               <th>Meeting Days</th>
               <th>Session Starts</th>
               <th>Application Due</th>
@@ -117,30 +120,33 @@
             <tbody>
               <tr>
                 <td>
-                  <img src="img/clubs/library.jpeg">
+                  <img class="club-logo" src="img/clubs/library.jpeg">
                 </td>
                 <td>Omaha Public Library</td>
                 <td>Abrahams Branch</td>
-                <td>Saturdays, 9:00am-1:00pm</td>
-                <td>Saturday, September 17</td>
-                <td>Saturday, August 27</td>
+                <td>6th-12th grade</td>
+                <td>Saturdays, 9am-1pm</td>
+                <td>September 17</td>
+                <td>August 27</td>
               </tr>
               <tr>
                 <td>
-                  <img src="img/clubs/AIM-logo.png">
+                  <img class="club-logo" src="img/clubs/AIM-logo.png">
                 </td>
                 <td>AIM</td>
                 <td>Completely  Kids</td>
+                <td></td>
                 <td>Tuesdays, Wednesdays 4-6pm</td>
                 <td>N/A</td>
                 <td>N/A</td>
               </tr>
               <tr>
                 <td>
-                  <img src="img/clubs/dospace-logo.jpg">
+                  <img class="club-logo" src="img/clubs/dospace-logo.jpg">
                 </td>
                 <td>Do Space</td>
                 <td>7205 Dodge St</td>
+                <td></td>
                 <td>Saturdays, Sundays 3-5pm</td>
                 <td>N/A</td>
                 <td>N/A</td>
