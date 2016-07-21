@@ -1,0 +1,14 @@
+.resource {
+  text-align: center;
+}
+.resource-heading {
+  color: #6eceb2;
+  font-weight: bold;
+  margin: 30px 10px 30px 10px;
+}
+.img-resource {
+  max-width: 100%;
+  max-height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
