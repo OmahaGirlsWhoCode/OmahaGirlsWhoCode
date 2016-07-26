@@ -142,16 +142,30 @@ p > a {
   margin-left: 10px;
 }
 
+/*I'm only seeing wrap-left being used on the About page but it's listed under .team
+so I'm worried I'm mucking something up somewhere that I can't find.
+----------------------------------------------------- */
 .wrap-left {
 	float: left;
 	margin: 10px;
-	height:220px;
-	width:400px;
+	height:280px;
+	width:220px;
 	border-radius:5px;
 }
 
 #mobile-view {
 	display:none;
+}
+
+/*About Page Styles
+-------------------------------------------------- */
+
+.about-title {
+  padding-left: 10px;
+}
+
+.about-post {
+  padding: 10px;
 }
 
 /*Sponsor Page Styles
@@ -240,10 +254,10 @@ html {
     border-radius: 4px;
   }
 
-  img.wrap-left {
-	  height: 100px;
-	  width: 200px;
-  }
+ img.wrap-left {
+	  height: 200px;
+	  width: 160px;
+  } 
   #desktop-view {
 	  display:none;
   }
