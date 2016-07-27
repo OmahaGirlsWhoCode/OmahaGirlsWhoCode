@@ -175,7 +175,7 @@ p > a {
 
 .sponsor img {
 	height: 120px;
-	width: 120px;
+	width: auto;
 }
 
 .sponsor h2 {
