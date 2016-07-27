@@ -167,6 +167,9 @@ so I'm worried I'm mucking something up somewhere that I can't find.
 .about-post {
   padding: 10px;
 }
+h2.about {
+  color: #6eceb2;
+}
 
 /*Sponsor Page Styles
 -------------------------------------------------- */
@@ -254,6 +257,7 @@ html {
     border-radius: 4px;
   }
 
+  /* I am only finding this used by the image on the About page in the project */
  img.wrap-left {
 	  height: 200px;
 	  width: 160px;
