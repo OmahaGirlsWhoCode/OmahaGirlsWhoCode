@@ -20,26 +20,36 @@
   height: auto !important;
 }
 
+.img-container > label {
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.img-container > input[type=checkbox] {
+  display: none;
+}
+
 .glass {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
   color: transparent;
-  text-align: center;
 }
 
 .glass:before {
   content: '';
   display: inline-block;
   height: 100%;
-  vertical-align: middle;
   margin-right: -0.25em; /* Adjusts for spacing */
 }
 
-.glass:hover, .glass:focus, .glass:active {
-  cursor: pointer;
+/*.glass:hover, .glass:focus, .glass:active {*/
+input[type=checkbox]:checked ~ label > .glass {
   background-color: rgba(255,255,255,0.85);
   color: black;
   -webkit-transition: background-color 1.5s ease-out;
@@ -47,6 +57,13 @@
   -o-transition: background-color 1.5s ease-out;
   transition: background-color 1.5s ease-out;
   visibility: visible;
+}
+
+.glass > span {
+  line-height: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
