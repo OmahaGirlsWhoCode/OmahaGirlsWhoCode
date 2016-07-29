@@ -48,7 +48,6 @@
   margin-right: -0.25em; /* Adjusts for spacing */
 }
 
-/*.glass:hover, .glass:focus, .glass:active {*/
 input[type=checkbox]:checked ~ label > .glass {
   background-color: rgba(255,255,255,0.85);
   color: black;
