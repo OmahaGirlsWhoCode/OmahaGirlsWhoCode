@@ -335,6 +335,6 @@ $(document).ready(function() {
         '<div class="glass" style="height: 100%; line-height=' + height + 'px">' +
           '<span>' + pics[i].caption + '</span></div>' +
         '</div>' +
-      '</label>');
+      '</label></div>');
   }
 });
