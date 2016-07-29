@@ -192,7 +192,11 @@ h2.about {
 
 .sponsor img {
 	height: 120px;
-	width: 120px;
+	width: auto;
+}
+
+.sponsor h2 {
+	font-size: 20px;
 }
 
 .sponsor .col-md-3 {
