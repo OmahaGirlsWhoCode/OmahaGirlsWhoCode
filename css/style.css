@@ -120,6 +120,12 @@ p > a {
   font-weight: 800;
 }
 
+.btn-default {
+	background: #01426a;
+	color:#fff;
+}
+
+
 #fb {
 	padding-top: 30px;
 }
@@ -180,10 +186,7 @@ h2.about {
 .sponsor .btn-lg, .sponsor .btn-default {
 	background: #01426a;
 	margin-bottom: 20px;
-}
-
-.sponsor .btn-default {
-	color: #fff;
+	color:#fff;
 }
 
 .sponsor .modal-body{
