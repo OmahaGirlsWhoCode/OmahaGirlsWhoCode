@@ -23,6 +23,16 @@ hr {
   border-top: 2px dotted #f4364c;
 }
 
+.btn-default {
+	background: #01426a;
+	color:#fff;
+}
+
+.btn-default:hover {
+	background: #01426a;
+	color:#fff;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -119,12 +129,6 @@ p > a {
   font-style: italic;
   font-weight: 800;
 }
-
-.btn-default {
-	background: #01426a;
-	color:#fff;
-}
-
 
 #fb {
 	padding-top: 30px;
