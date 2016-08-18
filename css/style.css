@@ -282,6 +282,6 @@ html {
   }
 }
 /* fix of iframe height for wufoo forms on Firefox, which defaults to height of 0 */
-#wufooFormm162h8u80qnh6ng, #wufoomobbd7d0s4mjkm {
+#wufooFormm162h8u80qnh6ng, #wufooFormmobbd7d0s4mjkm {
   min-height: 2000px;  
 }
