@@ -56,7 +56,6 @@
 									</ul>
                 </li>
 								<li><a href="clubs.html">Clubs</a></li>
-                <li><a href="sheql.html">SheQL - Apply Now</a></li>
 						  </ul>
 						</div>
 				  </div>
@@ -74,17 +73,12 @@
           {
           club: 'Omaha Public Library | Abrahams Branch 5111 North 90th Street, Omaha, NE 68134',
           lat:   41.3044577,
-          lng:  -96.0539399, 
-        },
-        {
-          club: 'AIM Brain Exchange 1902 Howard St, Omaha, NE 68102',
-          lat:   41.2558105,
-          lng:  -95.9434867, 
+          lng:  -96.0539399,
         },
         {
           club: 'Do Space 72nd & Dodge, Omaha, NE 68114',
           lat:   41.2589604,
-          lng:  -96.0268497, 
+          lng:  -96.0268497,
         }
         ]
         // Create a map object and specify the DOM element for display.
@@ -93,7 +87,7 @@
           scrollwheel: false,
           zoom: 11
         });
-        
+
         for (var i = 0; i < clubs.length; i ++ ) {
           var club = clubs[i];
           // Create a marker and set its position.
@@ -101,16 +95,18 @@
             map: map,
             position: {lat: club.lat, lng: club.lng},
             title: club.club
-          });          
+          });
         }
       }
       </script>
       <br>
       <div class="clubs-list">
+
         <div class="club row">
           <div class="col-xs-12">
             <h2 class="club-heading">Omaha Public Library</h2>
             <h3 class="sub-club">Abrahams Branch</h3>
+            <h3 class="club-heading">SheQL: Intro to Databases</h3>
           </div>
           <div class="col-xs-12 col-sm-4">
 
@@ -121,15 +117,42 @@
             </address>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4>Saturdays, 9am-1pm</h4>
-            <p>6th-12th grade</p>
-            <p><span>Instructors:</span> Eris Koleszar, Bianca Zongrone, Wendy Holley, Shannon Jackson</p>
+            <h4>Saturdays, 9:15am-1:00pm</h4>
+            <p>9th-12th grade</p>
+            <p><span>Instructors:</span>Wendy Holley and Shannon Jackson</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <h4>Not Accepting Applications</h4>
-            <p><span>Session Starts:</span> Saturday, September 17</p>
+            <p><span>Session Starts:</span> Saturday, June 17</p>
+            <p><span>Session Ends:</span> Saturday, August 19</p>
           </div>
         </div>
+
+        <div class="club row">
+          <div class="col-xs-12">
+            <h2 class="club-heading">Omaha Public Library</h2>
+            <h3 class="sub-club">Abrahams Branch</h3>
+            <h3 class="club-heading">HTM&#60elle&#62: Intro to HTML/CSS</h3>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+
+            <img class="club-logo" src="img/clubs/library.jpeg">
+            <address>
+              5111 North 90th Street<br>
+              Omaha, NE 68134
+            </address>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4>Saturday mornings</h4>
+            <p>6th-12th grade</p>
+            <p><span>Instructor:</span>Sandi Barr</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4>Accepting Applications Soon!</h4>
+            <p><span>Session Starts:</span> September</p>
+          </div>
+        </div>
+
         <div class="club row">
           <div class="col-xs-12">
             <h2 class="club-heading">Do Space</h2>
@@ -144,49 +167,29 @@
             </address>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4>Sundays 3-5pm</h4>
+            <h4>Sundays 2-5pm</h4>
             <p>6th-8th grade</p>
             <p><span>Instructors:</span> Alexandra Millatmal</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h4>Not Accepting Applications</h4>
-            <p><span>Session Starts:</span> Sunday, September 25</p>
+            <h4>Accepting Applications!</h4>
+            <a type="button" class="btn btn-default" href="http://www.dospace.org/events/girls-who-code" target="_blank">Apply Now</a>
+            <p><span>Applications Due:</span> Friday, August 11</p>
+            <p><span>Session Starts:</span> Sunday, September 3</p>
+            <p><span>Session Ends:</span> Sunday, December 17</p>
           </div>
         </div>
-        <div class="club row">
-          <div class="col-xs-12">
-            <h2 class="club-heading">AIM Brain Exchange</h2>
-            <h3 class="sub-club">Completely Kids</h3>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <img class="club-logo" src="img/clubs/aim-brainexchange-logo.png" style="max-width:230px;">
-            <img class="club-logo" src="img/clubs/completely-kids-logo.jpg">
-            <address>
-              1902 Howard St<br>
-              Omaha, NE 68102
-            </address>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h4>Tuesdays, Thursdays 4:30-5:30pm</h4>
-            <p>6th grade</p>
-            <p><span>Instructors:</span> Erin Lasiter</p>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h4>Not Accepting Applications</h4>
-            <p><span>Session Starts:</span>Tuesday, October 18th</p>
-          </div>
-        </div>
-        
-      </div><!-- CLUBS LIST -->      
-      
+
+      </div><!-- CLUBS LIST -->
+
       <div class="projects-list row">
         <div class="project col-xs-12">
           <h1>Club Projects</h1>
           <hr>
         </div>
         <div class="project col-xs-12 col-md-6">
-          <img class="project-club-logo" src="img/clubs/library.jpeg">        
-          <h3>Local Rainbows</h3>          
+          <img class="project-club-logo" src="img/clubs/library.jpeg">
+          <h3>Local Rainbows</h3>
           <h4 class="sub-club">Middle School Abrahams Branch - Spring 2016</h4>
           <a href="http://omahagirlswhocode.com/LocalRainbows" target="_blank">
             <div class="project-img" style="background-image:url('img/clubs/projects/giphy-club.png')">
@@ -215,7 +218,7 @@
             </div>
           </a>
           <p></p>
-        </div>  
+        </div>
 
         <div class="project col-xs-12 col-md-6">
           <img class="project-club-logo" src="img/clubs/library.jpeg">
@@ -237,7 +240,7 @@
             </div>
           </a>
           <p></p>
-        </div>      
+        </div>
 
         <div class="project col-xs-12 col-md-6">
           <img class="project-club-logo" src="img/clubs/library.jpeg">
@@ -329,7 +332,7 @@
 
 
       </div>
-    
+
     </div>
     <script>
     $(function () {
